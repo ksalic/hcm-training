@@ -54,3 +54,5 @@ definitions:
           jcr:primaryType: hst:sitemapitem
           hst:componentconfigurationid: hst:pages/faqlist
           hst:relativecontentpath: ${parent}/${1}
+      /new-sitemap-item:
+        jcr:primaryType: hst:sitemapitem
