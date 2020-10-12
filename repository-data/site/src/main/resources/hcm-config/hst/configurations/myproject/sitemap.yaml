@@ -56,3 +56,4 @@ definitions:
           hst:relativecontentpath: ${parent}/${1}
       /new-sitemap-item:
         jcr:primaryType: hst:sitemapitem
+        hst:parameternames: [test456]
