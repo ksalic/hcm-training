@@ -1,0 +1,5 @@
+group: hippo-cms
+project:
+  name: new-project
+  after: hippo-cms
+module: new-module

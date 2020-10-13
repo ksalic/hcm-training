@@ -19,6 +19,12 @@
     </dependency>
 
     <dependency>
+      <groupId>org.example</groupId>
+      <artifactId>myproject-repository-data-new-module</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.onehippo.cms7</groupId>
       <artifactId>hippo-package-cms-dependencies</artifactId>
       <type>pom</type>

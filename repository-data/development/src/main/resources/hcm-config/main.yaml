@@ -1,12 +1,16 @@
 definitions:
   config:
     /hippo:configuration/hippo:modules/autoexport/hippo:moduleconfig:
-      autoexport:modules:
-        operation: add
-        type: string
-        # this value tells auto-export to update existing definitions but not create new definitions here
-        # add path mappings to export development data into this module
-        value: ['repository-data/development', 'repository-data/site-development:myproject']
+      autoexport:modules: ['repository-data/application:/', 'repository-data/site:myproject:/hst:myproject',
+        repository-data/development, 'repository-data/site-development:myproject',
+        'repository-data/new-module:/grandpa']
+      autoexport:injectresidualchildnodecategory: ['/hst:platform/**: config', '/hst:*/**/hst:workspace/**[hst:containercomponent]:
+          content', '/hst:*/**/hst:workspace/**[hst:sitemenu]: content', '/hst:*/**/hst:workspace/hst:abstractpages:
+          content', '/hst:*/**/hst:workspace/hst:channel: content', '/hst:*/**/hst:workspace/hst:components:
+          content', '/hst:*/**/hst:workspace/hst:pages: content', '/hst:*/**/hst:workspace/hst:sitemap:
+          content', '/hst:*/**/hst:workspace/hst:templates: content', '/hst:*/hst:hosts/**[hst:virtualhostgroup]:
+          content', '/hst:*/hst:hosts/**[hst:virtualhost]: content', '/hst:*/hst:hosts/**[hst:mount]:
+          content', '/grandpa/**: content']
     /hippo:configuration/hippo:groups/author:
       hipposys:members:
         operation: add

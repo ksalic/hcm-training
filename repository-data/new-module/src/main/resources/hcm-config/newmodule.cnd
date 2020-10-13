@@ -1,0 +1,9 @@
+<test="http://www.test.org/1.0">
+
+[test:child] > nt:base
+- test:name (string) multiple
++ test:grandchild (test:child) multiple
+
+[test:parent] > nt:base
+- test:name (string) multiple
++ test:child (test:child) multiple

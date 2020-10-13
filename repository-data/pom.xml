@@ -19,6 +19,7 @@
     <module>site</module>
     <module>site-development</module>
     <module>webfiles</module>
+    <module>new-module</module>
   </modules>
 
   <build>

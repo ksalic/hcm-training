@@ -1,0 +1,9 @@
+definitions:
+  namespace:
+    test:
+      uri: http://www.test.org/1.0
+      cnd: newmodule.cnd
+  config:
+    /grandpa:
+      .meta:residual-child-node-category: content
+      jcr:primaryType: test:parent

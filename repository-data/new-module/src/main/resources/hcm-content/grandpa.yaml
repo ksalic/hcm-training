@@ -1,0 +1,2 @@
+/grandpa/test:child:
+  jcr:primaryType: test:child
